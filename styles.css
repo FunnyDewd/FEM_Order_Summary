@@ -1,0 +1,53 @@
+:root {
+    --clr-pale-blue : hsl(225, 100%, 94%);
+    --clr-bright-blue: hsl(245, 75%, 52%);
+
+    --clr-v-pale-blue: hsl(225, 100%, 98%);
+    --clr-des-blue: hsl(224, 75%, 55%);
+    --clr-dark-blue: hsl(223, 47%, 23%);
+
+    --def-font: 'Red Hat Display', sans-serif;
+    --def-font-size: 1rem;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("images/floor-tile.png");
+    background-color: var(--clr-pale-blue);
+    font-family: var(--def-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 1440px;
+    height: 900px;
+    background: var(--clr-pale-blue) url("images/pattern-background-desktop.svg");
+    /*background-color: #E0E8FF;*/
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-card {
+    background: white url("images/illustration-hero.svg") no-repeat;
+    text-align: center;
+    width: 450px;
+    padding: 14rem 3rem 3rem;
+    border-radius: 16px;
+}
