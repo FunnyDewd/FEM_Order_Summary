@@ -18,6 +18,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #898D9F;
 }
 
 body {
@@ -28,20 +29,38 @@ body {
     background-image: url("images/floor-tile.png");
     background-color: var(--clr-pale-blue);
     font-family: var(--def-font);
+    font-size: var(--def-font-size);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 main {
     width: 1440px;
     height: 900px;
     background: var(--clr-pale-blue) url("images/pattern-background-desktop.svg");
-    /*background-color: #E0E8FF;*/
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer {
+    display: block;
+}
+
+h1 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: black;
+}
+
+button {
+    display: block;
+    width: 100%;
 }
 
 .order-card {
@@ -49,5 +68,10 @@ main {
     text-align: center;
     width: 450px;
     padding: 14rem 3rem 3rem;
-    border-radius: 16px;
+    border-radius: 1rem;
+}
+
+.price-card {
+    margin: 1.25rem 0;
+
 }
