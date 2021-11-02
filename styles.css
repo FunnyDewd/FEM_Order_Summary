@@ -1,9 +1,12 @@
 :root {
     --clr-pale-blue : hsl(225, 100%, 94%);
     --clr-bright-blue: hsl(245, 75%, 52%);
+    --clr-bright-blue-hover: hsl(245, 75%, 65%);
+    --clr-bright-blue-shadow: hsla(245, 75%, 52%, .2);
 
     --clr-v-pale-blue: hsl(225, 100%, 98%);
     --clr-des-blue: hsl(224, 75%, 55%);
+    --clr-des-blue-shadow: hsla(224, 75%, 55%, .2);
     --clr-dark-blue: hsl(223, 47%, 23%);
 
     --def-font: 'Red Hat Display', sans-serif;
@@ -26,7 +29,7 @@ body {
     padding: 0;
     height: 100vh;
     width: 100vw;
-    background-image: url("images/floor-tile.png");
+    background-image: url("images/floor-tile.png"); /* no background was included, so we have this one */
     background-color: var(--clr-pale-blue);
     font-family: var(--def-font);
     font-size: var(--def-font-size);
@@ -52,7 +55,7 @@ footer {
 
 h1 {
     margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     font-size: 1.5rem;
     font-weight: 900;
     color: black;
@@ -69,9 +72,59 @@ button {
     width: 450px;
     padding: 14rem 3rem 3rem;
     border-radius: 1rem;
+    box-shadow: 0 16px 16px var(--clr-des-blue-shadow);
 }
 
 .price-card {
     margin: 1.25rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--clr-v-pale-blue);
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 0.875rem;
+}
+.price {
+    text-align: left;
+    flex-grow: 1;
+    padding: 0 1rem;
+}
 
+.price strong {
+    color: black;
+}
+
+.payment-btn {
+    border: 0;
+    background: var(--clr-bright-blue);
+    color: white;
+    font-weight: 700;
+    padding: 1em 0;
+    border-radius: .75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 16px 16px var(--clr-bright-blue-shadow);
+}
+
+.payment-btn:hover {
+    background: var(--clr-bright-blue-hover);
+}
+
+.cancel-btn {
+    border: 0;
+    background: none;
+    font-weight: 700;
+}
+
+.cancel-btn:hover {
+    color: black;
+}
+
+.change-link {
+    color: var(--clr-bright-blue);
+}
+
+.change-link:hover {
+    text-decoration: none;
 }
