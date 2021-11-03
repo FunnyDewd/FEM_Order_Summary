@@ -130,6 +130,9 @@ button {
 }
 
 @media screen and (max-width: 450px) {
+    main {
+        background-image: none;
+    }
     .order-card {
         width: 330px;
         padding: 10rem 2rem 1rem;
