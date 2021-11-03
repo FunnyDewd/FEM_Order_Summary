@@ -128,3 +128,11 @@ button {
 .change-link:hover {
     text-decoration: none;
 }
+
+@media screen and (max-width: 450px) {
+    .order-card {
+        width: 330px;
+        padding: 10rem 2rem 1rem;
+        background-size: contain;
+    }
+}
